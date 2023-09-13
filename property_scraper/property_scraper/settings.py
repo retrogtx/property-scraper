@@ -123,3 +123,9 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# MongoDB database settings
+MONGO_HOST = "localhost"
+MONGO_PORT = 27017
+MONGO_DB = "property_db"
+MONGO_COLLECTION = "property_data"

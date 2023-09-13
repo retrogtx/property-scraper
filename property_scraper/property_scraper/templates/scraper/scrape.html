@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Property Data Scraper</title>
+</head>
+
+<body>
+    <h1>Property Data Scraper</h1>
+    <p>This page shows the property data scraped from 99acres website for various cities and localities.</p>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Cost</th>
+            <th>Type</th>
+            <th>Area</th>
+            <th>Locality</th>
+            <th>City</th>
+            <th>Link</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.cost }}</td>
+            <td>{{ item.type }}</td>
+            <td>{{ item.area }}</td>
+            <td>{{ item.locality }}</td>
+            <td>{{ item.city }}</td>
+            <td><a href="{{ item.link }}">View</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>
