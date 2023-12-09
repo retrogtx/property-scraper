@@ -1,4 +1,4 @@
-# mobilics-project
+# Property Scraper
 
 - Project initially coded up to apply for an intern role at Mobilicis India Private Limited as a Python dev.
 - Process through which I got through this program:
